@@ -42,7 +42,7 @@ const UserForm = ({ onUserAdded }) => {
         imageUrls: urls,
       };
 
-      const response = await fetch("https://server-p56v460c4-dheerajthakur02s-projects.vercel.app/add", {
+      const response = await fetch("https://server-sable-one.vercel.app/add", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
