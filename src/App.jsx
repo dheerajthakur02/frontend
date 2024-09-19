@@ -8,7 +8,7 @@ const App = () => {
 
   const handleUserAdded = async () => {
     try {
-      const response = await fetch("https://server-sable-one.vercel.app/users");
+      const response = await fetch("https://server-p56v460c4-dheerajthakur02s-projects.vercel.app/users");
       const data = await response.json();
       setUsers(data);
     } catch (error) {
