@@ -1,0 +1,126 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+ 
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+/* App.css */
+
+ UserForm Styles
+.user-form {
+  text-align: center;
+}
+
+.user-form h2 {
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.user-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.user-form input {
+  margin-bottom: 10px;
+}
+
+.user-form button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.user-form .file-upload {
+  text-align: left;
+  margin: 10px 0;
+}
+
+/* UserAdmin Styles */
+.user-admin {
+  text-align: center;
+}
+
+.user-admin h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.user-admin p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.user-admin h3 {
+  margin-top: 20px;
+  color: #333;
+}
+
+.user-admin img {
+  width: 200px;
+  margin: 10px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+/* App.css */
+
+/* Thumbnail styles */
+.thumbnail-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 100px; /* Set the desired thumbnail size */
+  height: 100px;
+  object-fit: cover;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
