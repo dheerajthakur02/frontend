@@ -47,6 +47,7 @@ const UserForm = ({ onUserAdded }) => {
         headers: {
           "Content-Type": "application/json",
         },
+          mode: 'cors',
         body: JSON.stringify(newUser),
       });
       const data = await response.json();
