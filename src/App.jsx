@@ -8,7 +8,9 @@ const App = () => {
 
   const handleUserAdded = async () => {
     try {
-      const response = await fetch("https://server-sable-one.vercel.app/users");
+      const response = await fetch("https://server-sable-one.vercel.app/users", {
+        mode: 'cors', // Include mode: 'cors' here
+      });
       const data = await response.json();
       setUsers(data);
     } catch (error) {
@@ -16,7 +18,10 @@ const App = () => {
     }
   };
 
-  const toggleAdminPanel = () => {
+  const toggleAdminPanel = async () => {
+    if (!isAdminVisible) {
+      await handleUserAdded(); // Fetch fresh data when opening the admin panel
+    }
     setIsAdminVisible(!isAdminVisible);
   };
 
