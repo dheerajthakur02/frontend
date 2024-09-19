@@ -1,4 +1,4 @@
-import { useState } from 'react';
+ import { useState } from 'react';
 import UserForm from './UserForm';
 import UserAdmin from './UserAdmin';
 
@@ -8,9 +8,7 @@ const App = () => {
 
   const handleUserAdded = async () => {
     try {
-      const response = await fetch("https://server-sable-one.vercel.app/users", {
-        mode: 'cors', // Include mode: 'cors' here
-      });
+      const response = await fetch("https://server-sable-one.vercel.app/users");
       const data = await response.json();
       setUsers(data);
     } catch (error) {
@@ -18,10 +16,7 @@ const App = () => {
     }
   };
 
-  const toggleAdminPanel = async () => {
-    if (!isAdminVisible) {
-      await handleUserAdded(); // Fetch fresh data when opening the admin panel
-    }
+  const toggleAdminPanel = () => {
     setIsAdminVisible(!isAdminVisible);
   };
 
